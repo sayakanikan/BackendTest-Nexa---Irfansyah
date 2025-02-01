@@ -1,0 +1,34 @@
+{
+  "name": "backendtestnexa",
+  "version": "1.0.0",
+  "description": "backend test nexa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayakanikan/BackendTest-Nexa---Irfansyah.git"
+  },
+  "author": "Irfansyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayakanikan/BackendTest-Nexa---Irfansyah/issues"
+  },
+  "homepage": "https://github.com/sayakanikan/BackendTest-Nexa---Irfansyah#readme",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "md5": "^2.3.0",
+    "moment-timezone": "^0.5.47",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.12.0",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
