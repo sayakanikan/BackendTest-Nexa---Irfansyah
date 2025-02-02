@@ -19,7 +19,7 @@ export async function getToken(req, res) {
     if (!admin) return errorResponse(res, "Not Found", 404, "User Not Found");
 
     const encryptedPassword = md5(password);
-    if (encryptedPassword != admin.password) return errorResponse(res, "Unauthorized", 401, "Invalid credentials");
+    if (encryptedPassword != admin.password) return errorResponse(res, "Invalid Credentials", 401, "Wrong Username or Password");
 
     const payload = { id: admin.id, username: admin.username };
     const token = jwt.sign(payload, jwtSecret, { expiresIn: tokenExpiry });
