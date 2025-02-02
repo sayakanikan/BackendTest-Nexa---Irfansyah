@@ -1,0 +1,12 @@
+node_modules/
+
+*.log
+
+.git
+.gitignore
+README.md
+Dockerfile
+
+.vscode/
+.idea/
+.DS_Store
