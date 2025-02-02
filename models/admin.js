@@ -16,11 +16,11 @@ const Admin = sequelize.define(
       unique: true,
     },
     password: {
-      type: DataTypes.STRING,
+      type: DataTypes.BLOB("tiny"),
       allowNull: false,
       get() {
         const rawValue = this.getDataValue("password");
-        return rawValue ? rawValue.toString("utf8") : null;
+        return rawValue ? rawValue.toString("hex") : null;
       }
     },
   },
